@@ -1,15 +1,15 @@
 ﻿//Напишите программу, которая на вход 
 //принимает число и выдает его квардат (число
 //умноженное само на себя)
-Console.Write("Введите число: ");
+// Console.Write("Введите число: ");
 
-int number = Convert.ToInt32(Console.ReadLine());//covert переводит string в другую переменную
+// int number = Convert.ToInt32(Console.ReadLine());//covert переводит string в другую переменную
 
-int value = number * number;
+// int value = number * number;
 
-Console.Write("Результат: ");
+// Console.Write("Результат: ");
 
-System.Console.WriteLine(value);
+// System.Console.WriteLine(value);
 
 //2. Напишите программу, которая берет 2 числа 
 //и проверяет является ли первое квадратом второго
@@ -19,6 +19,18 @@ System.Console.WriteLine(value);
 // 3. проверяем первое число == второе * второе
 // 4. если да, то пишем да
 // 5. если нет, то пишем нет
+System.Console.Write("Введите число 1: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Введите число 2: ");
+int number2 = Convert.ToInt32(Console.ReadLine());
+int value = number2 * number2;
+if  (value == number1) {
+    System.Console.WriteLine("Да");
+}
+
+else {
+    System.Console.WriteLine("Нет");
+}
 
 // 3. Напишите программу, которая будет выдавать
 // название дня недели по заданному номеру.

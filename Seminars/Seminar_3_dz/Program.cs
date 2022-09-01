@@ -74,6 +74,6 @@ else Console.WriteLine($"Нужно указать пятизначное чис
 //   }
 // } 
 
-// int[] arry = new int[cube+1];
-// Cube(arry);
-// PrintArry(arry);
+int[] arry = new int[cube+1];
+Cube(arry);
+PrintArry(arry);

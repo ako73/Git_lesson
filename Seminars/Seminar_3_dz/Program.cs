@@ -3,20 +3,20 @@
 // 23432 -> да
 // 12821 -> да
 
-// Console.Write("Введите пятизначное число: ");
-// string? number = Console.ReadLine();
+Console.Write("Введите пятизначное число: ");
+string? number = Console.ReadLine();
 
-// void CheckingNumber(string number){
-//   if (number[0]==number[4] || number[1]==number[3]){
-//     Console.WriteLine($"Ваше число: {number} - палиндром.");
-//   }
-//   else Console.WriteLine($"Ваше число: {number} - не палиндром.");
-// }
+void CheckingNumber(string number){
+  if (number[0]==number[4] && number[1]==number[3]){
+    Console.WriteLine($"Ваше число: {number} - палиндром.");
+  }
+  else Console.WriteLine($"Ваше число: {number} - не палиндром.");
+}
 
-// if (number!.Length == 5){
-//   CheckingNumber(number);
-// }
-// else Console.WriteLine($"Нужно указать пятизначное число");
+if (number!.Length == 5){
+  CheckingNumber(number);
+}
+else Console.WriteLine($"Нужно указать пятизначное число");
 
 
 // Задача 21: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
@@ -53,27 +53,27 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
-Console.Write("Введите число: ");
-int cube = Convert.ToInt32(Console.ReadLine());
+// Console.Write("Введите число: ");
+// int cube = Convert.ToInt32(Console.ReadLine());
 
-void Cube(int[] cube){
-  int counter = 0;
-  int length = cube.Length;
-  while (counter <  length){
-    cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
-    counter++;
-  }
-}
+// void Cube(int[] cube){
+//   int counter = 0;
+//   int length = cube.Length;
+//   while (counter <  length){
+//     cube[counter] = Convert.ToInt32(Math.Pow(counter, 3));
+//     counter++;
+//   }
+// }
 
-void PrintArry(int[] coll){
-  int count = coll.Length;
-  int index = 0;
-  while(index < count){
-    Console.WriteLine(coll[index]+ " ");
-    index++;
-  }
-} 
+// void PrintArry(int[] coll){
+//   int count = coll.Length;
+//   int index = 0;
+//   while(index < count){
+//     Console.WriteLine(coll[index]+ " ");
+//     index++;
+//   }
+// } 
 
-int[] arry = new int[cube+1];
-Cube(arry);
-PrintArry(arry);
+// int[] arry = new int[cube+1];
+// Cube(arry);
+// PrintArry(arry);
